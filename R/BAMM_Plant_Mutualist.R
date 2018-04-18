@@ -1,3 +1,4 @@
+#BAMM Analysis#
 
 require(BAMMtools)
 require(coda)
