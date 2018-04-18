@@ -74,7 +74,7 @@ do
   done
 done
 
-### script to concatenate all teh abstracts
+### script to concatenate all the abstracts
 for y in `seq 2016 -1 1800`
 do
   echo $y
