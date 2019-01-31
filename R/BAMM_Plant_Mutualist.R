@@ -65,3 +65,8 @@ cat("mu: mean",mean(rateMut$mu),"sd",sd(rateMut$mu))
 
 #differences between mutualist and non-mutualist#
 cat("mean r1-r0:",mean((rateMut$lambda-rateMut$mu)-(rateNoMut$lambda-rateNoMut$mu)),"sd",sd((rateMut$lambda-rateMut$mu)-(rateNoMut$lambda-rateNoMut$mu)))
+
+#STRAPP test
+set.seed(1218)
+STRAPP2 <- traitDependentBAMM(event, pm.sorted, reps = 10000, rate = "net diversification", return.full = TRUE, method = 'm', logrates = FALSE,
+                              two.tailed = TRUE)
