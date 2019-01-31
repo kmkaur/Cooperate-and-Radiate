@@ -68,5 +68,6 @@ cat("mean r1-r0:",mean((rateMut$lambda-rateMut$mu)-(rateNoMut$lambda-rateNoMut$m
 
 #STRAPP test
 set.seed(1218)
-STRAPP2 <- traitDependentBAMM(event, pm.sorted, reps = 10000, rate = "net diversification", return.full = TRUE, method = 'm', logrates = FALSE,
+STRAPP <- traitDependentBAMM(event, pm.sorted, reps = 10000, rate = "net diversification", return.full = TRUE, method = 'm', logrates = FALSE,
                               two.tailed = TRUE)
+saveRDS(STRAPP, file="BAMM_STRAPP.rds")
