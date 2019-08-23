@@ -29,11 +29,6 @@ taxa <- read.csv("All_Terms_Species.csv", row.names=1)
 TreeOnly <- setdiff(tree$tip.label,rownames(taxa))
 DataOnly <- setdiff(rownames(taxa), tree$tip.label)
 
-
-taxa2 <- as.matrix(taxa)
-taxa3<-taxa2[-match(DataOnly, rownames(taxa2)),]
-taxa3 <- as.data.frame(taxa3)
-
 pruned<-drop.tip(tree, TreeOnly)
 
 #####HiSSE#####
@@ -42,6 +37,9 @@ pruned<-drop.tip(tree, TreeOnly)
 pruned2<-nnls.tree(cophenetic(pruned),pruned,rooted=TRUE)
 
 #convert data to hisse format
+taxa2 <- as.matrix(taxa)
+taxa3<-taxa2[-match(DataOnly, rownames(taxa2)),]
+taxa3 <- as.data.frame(taxa3)
 combo<-cbind(rownames(taxa3), taxa3[,1])
 
 #here are all the models:
