@@ -15,8 +15,7 @@ priors <- setBAMMpriors(read.tree("Newick_Species_Tree")) #these were added to t
 
 ####after running BAMM:####
 
-#Import tree, this is same tree used in the BAMM analysis
-#Species level phylogeny provided to us by Drs. Matthew Nelsen and Corrie Moreau
+#load Nelsen et al 2018 species tree
 #the tree has already been pruned to match the taxa for which
 #we have trait data available
 tree <- read.tree("Newick_Species_Tree")
