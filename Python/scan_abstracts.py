@@ -157,8 +157,8 @@ def analyze_abstracts(abstractfile, speciesfile):
     # dictionary to hold the answers
     result = {}
     
-    trait1 = ["tropical", "efn", "efns", "elaiosome", "elaiosomes", "domatia", "domatium", "myrmecodomatia", "myrmecodomatium", "myrmecophyte", "myrmecophytes", "trichilium", "trichilia", "aril", "myrmecochory", "myrmecochorous", "myrmecochore", "myrmecochores", "extrafloral", "arillate", "mutualism"]
-    trait2 = ["foliar nectaries", "foliar nectary", "root tuber", "root tubers", "food body", "food bodies", "beltian body", "beltian bodies", "mullerian body", "mullerian bodies", "pearl body", "pearl bodies", "leaf pouch", "leaf pouches", "swollen thorn", "swollen thorns", "seed dispersal", "seed dispersing", "seed disperser"]
+    trait1 = ["efn", "efns", "elaiosome", "elaiosomes", "domatia", "domatium", "myrmecodomatia", "myrmecodomatium", "myrmecophyte", "myrmecophytes", "trichilium", "trichilia", "aril", "myrmecochory", "myrmecochorous", "myrmecochore", "myrmecochores", "extrafloral"]
+    trait2 = ["foliar nectaries", "foliar nectary", "root tuber", "root tubers", "food body", "food bodies", "beltian body", "beltian bodies", "mullerian body", "mullerian bodies", "pearl body", "pearl bodies", "leaf pouch", "leaf pouches", "swollen thorn", "swollen thorns", "seed dispersal", "seed dispersing"]
     
 
     # index of the abstract being examined.
